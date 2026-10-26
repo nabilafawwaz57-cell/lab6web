@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum DOM dan Event</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1 id="judul">Latihan DOM</h1>
+    <p id="pesan">Belum ada tindakan.</p>
+    <button id="tombolAksi" type="button">Klik Saya</button>
+
+    <p id="teksGaya">Ini contoh teks yang akan diubah gayanya.</p>
+    <button id="tombolGaya" type="button">Ubah Gaya</button>
+    
+    <label for="namaInput">Masukkan Nama:</label>
+    <input type="text" id="namaInput">
+    <p>Jumlah karakter: <span id="jumlahKarakter">0</span></p>
+
+<h2>Formulir Pendaftaran</h2>
+
+<form id="formPendaftaran">
+  <label for="nama">Nama:</label>
+  <input type="text" id="nama" required>
+
+  <br><br>
+
+  <label for="email">Email:</label>
+  <input type="text" id="email" required>
+
+  <br><br>
+
+  <label for="usia">Usia:</label>
+  <input type="number" id="usia" required>
+
+  <br><br>
+
+  <button type="submit">Daftar</button>
+</form>
+
+<p id="pesanValidasi"></p>
+
+<h2>To-Do List</h2>
+
+<input type="text" id="inputTugas" placeholder="Masukkan tugas...">
+<button id="tambahTugas" type="button">Tambah Tugas</button>
+
+<ul id="daftarTugas"></ul>
+
+<section>
+  <h2>Form Pendaftaran Workshop</h2>
+
+  <form id="formWorkshop">
+    <label for="namaWorkshop">Nama lengkap:</label>
+    <input type="text" id="namaWorkshop">
+    <p>Jumlah karakter: <span id="hitungNama">0</span></p>
+
+    <br>
+
+    <label for="emailWorkshop">Email:</label>
+    <input type="text" id="emailWorkshop">
+
+    <br><br>
+
+    <label for="sesiWorkshop">Pilih sesi:</label>
+    <select id="sesiWorkshop">
+      <option value="">-- Pilih sesi --</option>
+      <option value="Pagi">Sesi Pagi</option>
+      <option value="Siang">Sesi Siang</option>
+      <option value="Sore">Sesi Sore</option>
+    </select>
+
+    <br><br>
+
+    <button type="submit">Daftar Workshop</button>
+    <button type="reset">Reset</button>
+  </form>
+
+  <p id="pesanWorkshop"></p>
+  <p id="ringkasanWorkshop"></p>
+</section>
+
+<section>
+  <h2>Eksperimen Sembunyikan dan Tampilkan</h2>
+
+  <p id="paragrafEksperimen">
+    Ini adalah paragraf untuk latihan DOM.
+  </p>
+
+  <button id="tombolSembunyi" type="button">
+    Sembunyikan / Tampilkan
+  </button>
+</section>
+
+</body>
+</html>
